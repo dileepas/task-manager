@@ -1,4 +1,4 @@
-import {Link, useLocation, useParams} from "react-router-dom"
+import {Link} from "react-router-dom"
 const About = () => {
 
     return (
@@ -9,9 +9,6 @@ const About = () => {
     )
 }
 
-function BlogPost() {
-    let { slug } = useParams();
-    return <div>Now showing post {slug}</div>;
-}
+
 
 export default About
