@@ -24,10 +24,10 @@ jobs:
       - name: npm install, build, and test
         run: |
           yarn
-          yarn run build --if-present
-          yarn run test --if-present
+          yarn run build 
+          yarn run test
         env: 
-               CI: false
+          CI: false
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
